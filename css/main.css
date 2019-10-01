@@ -121,6 +121,10 @@
 	background: #f7f7f7;
 }
 
+.rectangle__form__button--loup {
+	display: none;
+}
+
 .rectangle__contact__dropdown-content {
     display: none;
     position: absolute;

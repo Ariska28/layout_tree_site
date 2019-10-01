@@ -1,9 +1,69 @@
 
-@media screen and (min-width: 400px) and (max-width: 1000px)
+@media only screen and (max-width: 350px)
 {
+
 	.rectangle__logo--caption {
 		display: none;
 	}
+
+	.rectangle__logo--smale {
+		width: 40px;
+	}
+
+	.rectangle__contact__people__button {
+		display: none;
+	}
+	.rectangle__form {
+		display: none;
+	}
+
+	.rectangle__form__button--loup {
+		display: flex;
+		align-items: center;
+	}
+
+	.rectangle__form__button--loup--img {
+		width: 23px;
+		height: 23px;
+	}
+
+	.rectangle__form__button--loup {
+		background: #fff;
+		border: none;
+	}
+
+	.button--link {
+		display: none;
+	}
+
+	.subheader__title {
+		display: none;
+	}
+	.subheader {
+		width: 360px;
+		justify-content: flex-start;
+	}
+
+	.subheader__textmenu{
+		margin:0;
+	}
+
+	.mainBlock__block__three-button {
+		width:200px;
+		position: static;
+		padding: 0;
+	}
+
+	.first {
+		padding: 0;
+	}
+	.second {
+		padding: 0;
+	} 
+	.third {
+		padding: 0;
+	}
+
 }
 
 
