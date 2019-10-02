@@ -9,8 +9,9 @@
 
 .rectangle__logo--img {
 	display:block;
-	height: 40px;
+	height: 34px;
 	width: 190px;
+	margin-right: 20px;
 }
 
 .last-button {
@@ -22,6 +23,10 @@
 	align-items: center;
 }
 
+.rectangle__logo--link {
+	display: flex;
+	align-content: center;
+}
 
 .rectangle__form {
 	width: 432px;
