@@ -22,6 +22,9 @@
 	margin:10px;
 
 }
+.rectangle__button--menu{
+	display: none;
+}
 
 .rectangle__field {
 	width: 100%;
