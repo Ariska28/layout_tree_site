@@ -13,6 +13,16 @@
 	width: 190px;
 }
 
+.last-button {
+	border-right: 1px solid rgba(255, 193, 128, 0.76);
+}
+
+.rectangle__logo__container {
+	display: flex;
+	align-items: center;
+}
+
+
 .rectangle__form {
 	width: 432px;
 	display: flex;
@@ -24,6 +34,12 @@
 }
 .rectangle__button--menu{
 	display: none;
+}
+
+.rectangle__logo--Partner {
+	height: 20px;
+	width: 150px;
+
 }
 
 .rectangle__field {
@@ -169,6 +185,7 @@
 .subheader__conteiner__menu {
 	display: flex;
 	align-items: center;
+	width: 100%;
 }
 
 .subheader__animated {
@@ -281,8 +298,22 @@
 }
 
 .subheader__animated--reload {
-	position: relative;
-	left: 12%;
+	position: static;
+}
+
+.subheader__conteiner__menu--items {
+	display: flex;
+	height: 100%;
+	width: 70%;
+	justify-content: flex-end;
+}
+
+.subheader--reload {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	width: 30%;
+	justify-content: flex-end;
 }
 /*---------------------------------------*/
 

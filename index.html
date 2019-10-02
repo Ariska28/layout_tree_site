@@ -70,78 +70,82 @@
 
 		<nav class="subheader">
 			<ul class="subheader__conteiner__menu">
-				<li class="subheader__animated">
-					<button class="subheader__textmenu">
-						<svg class="subheader__sign1">
-							<use xlink:href="#subheader--navigation">
-						</svg>
-						<p class="subheader__title"> 
-						Oslo, Norway </p>
+				<div class="subheader__conteiner__menu--items">
+					<li class="subheader__animated">
+						<button class="subheader__textmenu">
+							<svg class="subheader__sign1">
+								<use xlink:href="#subheader--navigation">
+							</svg>
+							<p class="subheader__title"> 
+							Oslo, Norway </p>
+							<svg class="subheader__arrow">
+								<use xlink:href="#subheader--arrow">
+							</svg>
+						</button>
+					</li>
+
+					<li class="subheader__animated">
+						<button  class="subheader__textmenu link">
+							<svg class="subheader__sign">
+								<use xlink:href="#subheader--road">
+							</svg>	
+								<p class="subheader__title">	
+								61 km 
+								</p>
+							<svg class="subheader__arrow">
+								<use xlink:href="#subheader--arrow">
+							</svg>
+						 </button>
+
+						<ul class="submenu">
+				     		<li><a class="subheader__submenu__link" href="#">item1</a></li>
+				            <li><a class="subheader__submenu__link" href="#">item2</a></li>
+				            <li><a class="subheader__submenu__link" href="#">item3</a></li>
+						</ul>
+
+					</li>
+
+					<li class="subheader__animated">
+						<button class="subheader__textmenu">
+							<svg class="subheader__sign">
+								<use xlink:href="#subheader--squares">
+							</svg>
+								<p class="subheader__title">
+								Categories
+								</p>
 						<svg class="subheader__arrow">
 							<use xlink:href="#subheader--arrow">
-						</svg>
+						</svg> 
 					</button>
-				</li>
+					</li>
 
-				<li class="subheader__animated">
-					<button  class="subheader__textmenu link">
-						<svg class="subheader__sign">
-							<use xlink:href="#subheader--road">
-						</svg>	
-							<p class="subheader__title">	
-							61 km 
-							</p>
-						<svg class="subheader__arrow">
-							<use xlink:href="#subheader--arrow">
-						</svg>
-					 </button>
+					<li class="subheader__animated" >
+						<button class="subheader__textmenu link">
+							<svg class="subheader__sign">
+								<use xlink:href="#subheader--suitcase">
+							</svg>
+								<p class="subheader__title">
+								June 4, 2018 
+								</p>
+							<svg class="subheader__arrow">
+								<use xlink:href="#subheader--arrow">
+							</svg>
+						</button>
+					</li>
+			</div>
 
-					<ul class="submenu">
-			     		<li><a class="subheader__submenu__link" href="#">item1</a></li>
-			            <li><a class="subheader__submenu__link" href="#">item2</a></li>
-			            <li><a class="subheader__submenu__link" href="#">item3</a></li>
-					</ul>
-
-				</li>
-
-				<li class="subheader__animated">
-					<button class="subheader__textmenu">
-						<svg class="subheader__sign">
-							<use xlink:href="#subheader--squares">
-						</svg>
-							<p class="subheader__title">
-							Categories
-							</p>
-					<svg class="subheader__arrow">
-						<use xlink:href="#subheader--arrow">
-					</svg> 
-				</button>
-				</li>
-
-				<li class="subheader__animated" >
-					<button class="subheader__textmenu link">
-						<svg class="subheader__sign">
-							<use xlink:href="#subheader--suitcase">
-						</svg>
-							<p class="subheader__title">
-							June 4, 2018 
-							</p>
-						<svg class="subheader__arrow">
-							<use xlink:href="#subheader--arrow">
-						</svg>
-					</button>
-				</li>
-
+			<div class="subheader--reload">
 				<li class="subheader__animated--reload" >
 					<button class="subheader__textmenu button--link" href="#">
 						<svg class="subheader__animated--reload__img">
-							<use xlink:href="#subheader--reload">
+							<use xlink:href="#subheader--reload" x="0" y="0">
 						</svg>
 						<p class="subheader__title">
 						Reset
 						</p>
 				</button>
 				</li>
+			</use>
 
 			</ul>
 		</nav>
@@ -645,5 +649,10 @@
 		<rect x="14.3916" y="16.1895" width="2.54393" height="10.1757" rx="1.27196" transform="rotate(-45 14.3916 16.1895)" fill="rgb(255, 131, 0)"/>
 	</symbol>
 
+	<symbol id="arrow-phone">
+		<path d="M12.7674 6.5C12.7674 9.53754 10.3045 12 7.26741 12C5.24456 12 3.47553 10.9073 2.52046 9.27981C2.42133 9.11089 2.24377 9 2.04791 9C1.67573 9 1.42592 9.37858 1.60954 9.7023C2.72644 11.6714 4.84173 13 7.26741 13C10.8573 13 13.7674 10.0898 13.7674 6.5C13.7674 2.91016 10.8573 0 7.26741 0C4.84173 0 2.72644 1.32858 1.60954 3.2977C1.42592 3.62142 1.67573 4 2.04791 4C2.24377 4 2.42133 3.88911 2.52046 3.72019C3.47553 2.0927 5.24456 1 7.26741 1C10.3045 1 12.7674 3.46246 12.7674 6.5Z" fill="white"/>
+		<path d="M0.0155089 1.59466C-0.0524747 1.32701 0.109381 1.05493 0.377024 0.986951C0.644668 0.918968 0.916747 1.08082 0.98473 1.34847L1.60021 3.77152C1.73617 4.30681 1.41246 4.85097 0.877175 4.98693L0.0155089 1.59466Z" fill="white"/>
+		<path d="M4.02326 3.15604C4.2909 3.08806 4.56298 3.24992 4.63097 3.51756C4.69895 3.7852 4.53709 4.05728 4.26945 4.12527L0.877175 4.98693C0.741208 4.45165 1.06492 3.90749 1.60021 3.77152L4.02326 3.15604Z" fill="white"/>
+	</symbol>
 
 </svg>
