@@ -30,6 +30,7 @@
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .block__menu {
@@ -123,6 +124,15 @@
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
+.gallery__block-time-ellips {
+	width: 20px;
+	height: 20px;
+	background: #FF8300;
+	display: inline-block;
+	border-radius: 50%;
+	position: absolute;
+	top:89%;
+	right:5%;
 }
 
 
@@ -131,6 +141,7 @@
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 30px;
+	position: relative;
 }
 
 
@@ -140,6 +151,7 @@
 	line-height: 34px;	
 	padding-left: 20px;
 	background: #f5f5f5;
+	position: relative;
 }
 
 .block__conten--caption-h {
@@ -157,30 +169,48 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.block__conteiner--ellipse {
+	position: absolute;
+	top:1%;
+	right: 0%;
+	z-index: 7;
+	display: flex;
+	background: #f5f5f5;
+	width: 20%;
+	justify-content: flex-end;
+	
+}
 
+.ellipse-arrow--white {
+	background: #fff;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
 
+}
+.ellipse-arrow--orange {
+	background: #FF8300;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border:none;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.gallery__block-arrow {
+	width: 10px;
+	height: 15px;
+}
 
 
 
@@ -300,7 +330,7 @@
 		flex-direction: column;
 		position: relative;
 		min-height: 270px;
-	    flex: 0 0 calc(14% - 40px);
+	    flex: 0 0 calc(20% - 40px);
 	}
 }
 
@@ -317,7 +347,7 @@
 		flex-direction: column;
 		position: relative;
 		min-height: 270px;
-	    flex: 0 0 calc(16% - 40px);
+	    flex: 0 0 calc(23% - 40px);
 	}
 }
 
@@ -334,28 +364,15 @@
 		flex-direction: column;
 		position: relative;
 		min-height: 270px;
-	    flex: 0 0 calc(20% - 40px);
-	}
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1500px )
-{ 
-	.gallery__block {
-		padding:  0;
-		border: thin solid #E2E2E5;
-		border-radius: 5px ;
-		overflow: hidden;
-		margin: 20px;
-		background: #fff;
-		display: flex;
-		flex-direction: column;
-		position: relative;
-		min-height: 270px;
 	    flex: 0 0 calc(25% - 40px);
+
 	}
 }
 
-@media screen and (min-width:1000px) and (max-width:  1200px )
+
+
+
+@media screen and (min-width:1000px) and (max-width:  1500px )
 { 
 	.gallery__block {
 		padding:  0;
@@ -368,11 +385,13 @@
 		flex-direction: column;
 		position: relative;
 		min-height: 270px;
-	    flex: 0 0 calc(33% - 40px);
+	    flex: 0 0 calc(35% - 40px);
+
+
 	}
 }
 
-@media screen and (min-width: 700px) and (max-width: 1000px )
+@media screen and (min-width: 850px) and (max-width: 1000px )
 { 
 	.gallery__block {
 		padding:  0;
@@ -385,7 +404,28 @@
 		flex-direction: column;
 		position: relative;
 		min-height: 270px;
-	    flex: 0 0 calc(50% - 40px);
+	    flex: 0 0 calc(45% - 40px);
+
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 850px )
+{ 
+	.gallery__block {
+		padding:  0;
+		border: thin solid #E2E2E5;
+		border-radius: 5px ;
+		overflow: hidden;
+		margin: 20px;
+		background: #fff;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		min-height: 270px;
+	    flex: 0 0 calc(60% - 40px);
+
+
+
 	}
 }
 
@@ -403,5 +443,8 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(100% - 40px);
+
+
 	}
 }
+

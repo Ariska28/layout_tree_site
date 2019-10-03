@@ -434,10 +434,9 @@
 	font-size: 12px;
 	line-height: 16px;
 	color: rgba(0, 0, 0, 0.6);
-	display: block;
+	display: inline-block;
 	align-self: flex-end;
 	border-top: thin solid #E2E2E5;
-	width: 230px;
 	padding: 9px 0 9px 9px;
 	width: 100%;
 }
