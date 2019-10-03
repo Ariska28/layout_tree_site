@@ -267,7 +267,6 @@
 	text-align: left;
 	padding: 12px 15px;
 	font-size: 13px;
-	border-bottom: 1px solid rgba(255,255,255,.1);
 	display: flex;
 }
 
@@ -285,7 +284,6 @@
 .button--link {
 	border-radius: 60px;	
 	background: rgba(255, 255, 255, 0.3);
-	border: 1px solid #EF7B00;
 	padding: 5px 10px;
 	transition: 0.3s; 
 }
@@ -299,7 +297,6 @@
 .button--link:hover {
 	transform: scale(1.2,1.2);
 	background: rgba(255, 255, 255, 0.3);
-	border: 1px solid #EF7B00;
 }
 
 .subheader__animated--reload {
