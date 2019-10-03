@@ -3,8 +3,6 @@
 body {
 	background: #fafafc;		
 }
-
-
 .rectangle {
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.08);
 }
@@ -224,7 +222,7 @@ body {
 
 }
 
-.last {
+
 
 
 /*проблема с блоком с кнопкой при пере носе на другую строку он теряет свою высоту!*/
