@@ -1,4 +1,3 @@
-
 .rectangle {
 	display: flex;
 	align-items: center;
@@ -63,9 +62,9 @@
 	font-weight: 600;
 	font-size: 14px;
 	padding-left: 20px;
-
 }
-.rectangle__field[type="search"] {
+
+.rectangle__field[type="text"] {
 	padding:0 30px;
 }
 
@@ -83,6 +82,10 @@
 	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
+}
+
+.rectangle__form__button--loup {
+	display: none;
 }
 
 .rectangle__form__loupe {
@@ -489,4 +492,3 @@
 	width: 40px;
 	height: 40px;
 }
-
