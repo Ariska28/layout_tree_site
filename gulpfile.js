@@ -11,7 +11,7 @@ var paths = {
         all: ['./js/scripts.js'],
         content: [
             './src/js/script.js'
-        ],
+        ],   
         vendors: [
             './src/js/lib/jquery-3.2.1.min.js',
             './src/js/lib/slick.js'
@@ -19,10 +19,10 @@ var paths = {
     },
     images: ['./images/**'],
     scss: {
-        build: ['./src/scss/style-*.scss'],
+        build: ['./src/scss/style.scss', './src/scss/style-*.scss','./src/scss/main-*.scss'],
         watch: ['./src/scss/**/*.scss']
     },
-    css: ['./css/style-*.css']
+    css: ['./css/style.css', './css/style-*.css','./css/main-*.css']
 };
 
 gulp.task('clean', function () {

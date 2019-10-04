@@ -54,8 +54,7 @@
 }
 
 .block__menu--items:hover .block__menu--link {
-	color: #ff6130;
-}
+	color: #ff6130; color: #ff6130; }
 
 .block__menu--items {
 	padding: 10px 40px 10px 10px;
