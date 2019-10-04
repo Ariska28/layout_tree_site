@@ -14,14 +14,14 @@
 .block__conteiner {
 	display: flex;
 	width: 100%;
-	padding: 5% 0 0 0;
+	padding: 5% 65px 0 65px;
 	height: 100%;
 }
 
 .block__content {
 	display: flex;
 	flex-direction: column;
-	width: 70%;
+	width: 80%;
 	margin:0 50px;
 }
 
@@ -37,8 +37,12 @@
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-end;
-	width: 30%;
+	width: 20%;
 	z-index: 6;
+}
+
+.block__menu--link:focus {
+	color: #FF8300;
 }
 
 .block__menu--information {
@@ -46,6 +50,11 @@
 	padding: 0 0 0 15px;
 	position: sticky;
 	top:5%;
+	flex:0 0 214px;
+}
+
+.block__menu--items:hover .block__menu--link {
+	color: #ff6130;
 }
 
 .block__menu--items {
