@@ -228,6 +228,7 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(6% - 40px);
+
 	}
 }
 
@@ -245,6 +246,7 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(8% - 40px);
+
 	}
 }
 
@@ -296,6 +298,7 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(11% - 40px);
+
 	}
 }
 
@@ -313,6 +316,7 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(12% - 40px);
+
 	}
 }
 
@@ -329,7 +333,7 @@
 		flex-direction: column;
 		position: relative;
 		min-height: 270px;
-	    flex: 0 0 calc(20% - 40px);
+	    flex: 0 0 calc(15% - 40px);
 	}
 }
 
@@ -346,7 +350,7 @@
 		flex-direction: column;
 		position: relative;
 		min-height: 270px;
-	    flex: 0 0 calc(23% - 40px);
+	    flex: 0 0 calc(20% - 40px);
 	}
 }
 

@@ -182,7 +182,7 @@
 	.main__button-second {
 		padding: 0;
 	} 
-	.main__button-third {
+	.third {
 		padding: 0;
 	}
 	
@@ -280,6 +280,7 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(11% - 40px);
+
 	}
 }
 
@@ -314,6 +315,8 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(14% - 40px);
+	    
+
 	}
 }
 
@@ -331,6 +334,7 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(16% - 40px);
+
 	}
 }
 
@@ -348,6 +352,7 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(20% - 40px);
+
 	}
 }
 
@@ -365,6 +370,7 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(25% - 40px);
+
 	}
 }
 
@@ -382,6 +388,7 @@
 		position: relative;
 		min-height: 270px;
 	    flex: 0 0 calc(33% - 40px);
+background: red;
 	}
 }
 
