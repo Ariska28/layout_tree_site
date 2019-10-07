@@ -12,146 +12,151 @@
 
 <body>		
 	<header>
-		<div class="rectangle">
-			<div class="rectangle__logo">
-				<div class="rectangle__logo__container">
-					<a href="#" class="rectangle__logo__link">
-						<svg class="rectangle__logo--img">
-							<use class="rectangle__logo--smale" xlink:href="#smile"></use>
-							<use class="rectangle__logo--caption" xlink:href="#Logotip"></use>
+		<div class="head">
+			<div class="head__logotype_disable">
+				<div class="head__logotype">
+					<a href="#" class="head__link">
+						<svg class="head__img">
+							<use class="head__img_smale" xlink:href="#smile"></use>
+							<use class="head__img_caption" xlink:href="#Logotip"></use>
 						</svg>
 					</a>
-					<a href="#" class="rectangle__logo--link">
-						<svg class="rectangle__logo--Partner">
-							<use class="rectangle__logo--caption" xlink:href="#Partner"></use>
+					<div class="head__logotype_partner">
+						<a href="#" class="head__link">
+						<svg class="head__img_partner">
+							<use  xlink:href="#Partner"></use>
 						</svg>
 					</a>
+
+					</div>
 				</div>
-				<div class="rectangle__logo__container">
-					<button class="rectangle__form__button--loup" type="submit">
-					 	<svg class="rectangle__form__button--loup--img">
+				<div class="head_buttons">
+					<button class="head_button_loup" type="submit">
+						<form class="head__form_phine-version" action="" method="get">
+							 <input class="head__input_phine-version" name="search-form" placeholder="I’m looking for..." type="search">
+						</form>
+					 	<svg class="head__img_loup">
 							<use xlink:href="#loup" x="-2" y="-2"></use>
 						</svg>
 					</button>
-					<button class="rectangle__button--menu">
-						<div class="rectangle__button__conteiner--menu">
-							<div class="rectangle__button__lines--menu">
+					<button class="head__button_three-line">
+						<div class="head__menu">
+							<div class="head__menu_itim">
 							</div>
-							<div class="rectangle__button__lines--menu">
+							<div class="head__menu_itim">
 							</div> 
-							<div class="rectangle__button__lines--menu">
+							<div class="head__menu_itim">
 							</div>
 						</div>
 					</button>
 			    </div>
-			</div>
+			</div>	
 
-			<form class="rectangle__form" action="" method="get">
-				 <input class="rectangle__field" name="search-form" placeholder="I’m looking for..." type="search">
-				  <img class="rectangle__form__loupe" src="img3/Lupa.svg" alt="">
-				 <button class="rectangle__form__button" type="submit">Go!</button>
+			<form class="head__form" action="" method="get">
+				 <input class="head__input" name="search-form" placeholder="I’m looking for..." type="search">
+				  <img class="head__img_form-loup" src="img3/Lupa.svg" alt="">
+				 <button class="head__button-Go" type="submit">Go!</button>
 			</form>
 			
 
-			<div class="rectangle__contact">
-				<button class="rectangle__contact__people__button">	
-				<img class="rectangle__contact__people" src="img/Ellipsepeaple.svg" alt="photo">
-					<p class="rectangle__contact__people__name">
+			<div class="head__contact">
+				<button class="head__contact__button">	
+				<img class="head__contact__img" src="img/Ellipsepeaple.svg" alt="photo">
+					<p class="head__contact__name">
 					Robert Singer
 					</p>
-					<svg class="rectangle__contact__arrow">
+					<svg class="head__contact__arrow">
 						<use xlink:href="#arrow-author"></use>
 					</svg>
 				</button>
-				<div class="rectangle__contact__dropdown-content">
-				    <a class="rectangle__contact__dropdown-conten--link" href="#">Link 1</a>
-				    <a class="rectangle__contact__dropdown-conten--link" href="#">Link 2</a>
-				    <a class="rectangle__contact__dropdown-conten--link" href="#">Link 3</a>
+				<div class="head__contact__dropdown-content">
+				    <a class="head__contact__dropdown-conten_link" href="#">Link 1</a>
+				    <a class="head__contact__dropdown-conten_link" href="#">Link 2</a>
+				    <a class="head__contact__dropdown-conten_link" href="#">Link 3</a>
 			  	</div>
 			</div>
 		</div>
 	</header>
 
-	<main class="block">
-		<div class="block__conteiner">
-
-			<div class="block__menu">
-				<nav class="block__menu--information">
-					<ul class="block__menu--content">
-						<li class="block__menu--items">
-							<a class="block__menu--link" href="#"> 
-								<svg class="block__menu--sign">
+	<main class="main">
+		<div class="main__block_padding">
+			<div class="main__menu">
+				<nav class="main__menu--navigation">
+					<ul class="main__menu--content">
+						<li class="main__menu--items">
+							<a class="main__menu--link" href="#"> 
+								<svg class="main__menu--sign">
 									<use xlink:href="#person" x="0" y="0"></use>
 								</svg>	Profil
 						</a>
-							<svg class="block__menu--arrow">
+							<svg class="main__menu--arrow">
 									<use xlink:href="#arrow-menu" x="0" y="0"></use>
 							</svg>
 						</li>
 
-						<li class="block__menu--items">
-							<a class="block__menu--link" href="#"><svg class="block__menu--sign">
+						<li class="main__menu--items">
+							<a class="main__menu--link" href="#"><svg class="main__menu--sign">
 									<use xlink:href="#time-suitcase" x="2" y="3"></use>
 								</svg>	Event
 							</a>
-								<svg class="block__menu--arrow">
+								<svg class="main__menu--arrow">
 									<use xlink:href="#arrow-menu" x="0" y="0"></use>
 							</svg>
 					    </li>
 
-						<li class="block__menu--items">
-							<a class="block__menu--link" href="#">
-								<svg class="block__menu--sign">
+						<li class="main__menu--items">
+							<a class="main__menu--link" href="#">
+								<svg class="main__menu--sign">
 									<use xlink:href="#photos" x="0" y="0"></use>
 								</svg>Photos
 							</a>
-							<svg class="block__menu--arrow">
+							<svg class="main__menu--arrow">
 									<use xlink:href="#arrow-menu" x="0" y="0"></use>
 							</svg>
 						</li>
 
-						<li class="block__menu--items">
-							<a class="block__menu--link" href="#">
-								<svg class="block__menu--sign">
+						<li class="main__menu--items">
+							<a class="main__menu--link" href="#">
+								<svg class="main__menu--sign">
 									<use xlink:href="#notification" x="0" y="0"></use>
 								</svg>
 						Notifications
 							</a>
-							<svg class="block__menu--arrow">
+							<svg class="main__menu--arrow">
 									<use xlink:href="#arrow-menu" x="0" y="0"></use>
 							</svg>
 						</li>
 
-						<li class="block__menu--items">
-							<a class="block__menu--link" href="#">
-								<svg class="block__menu--sign">
+						<li class="main__menu--items">
+							<a class="main__menu--link" href="#">
+								<svg class="main__menu--sign">
 									<use xlink:href="#setting" x="1" y="1"></use>
 								</svg>Settings
 							</a>
-							<svg class="block__menu--arrow">
+							<svg class="main__menu--arrow">
 									<use xlink:href="#arrow-menu" x="0" y="0"></use>
 							</svg>
 						</li>
 
-						<li class="block__menu--items">
-							<a class="block__menu--link" href="#">
-								<svg class="block__menu--sign">
+						<li class="main__menu--items">
+							<a class="main__menu--link" href="#">
+								<svg class="main__menu--sign">
 									<use xlink:href="#payment" x="0" y="0"></use>
 								</svg>Payment
 							</a>
-							<svg class="block__menu--arrow">
+							<svg class="main__menu--arrow">
 									<use xlink:href="#arrow-menu" x="0" y="0"></use>
 							</svg>
 						</li>
 
-						<li class="block__menu--items">
-							<a class="block__menu--link" href="#">
-								<svg class="block__menu--sign">
+						<li class="main__menu--items">
+							<a class="main__menu--link" href="#">
+								<svg class="main__menu--sign">
 									<use xlink:href="#support" x="0" y="0"></use>
 								</svg>
 								Support
 							</a>
-							<svg class="block__menu--arrow">
+							<svg class="main__menu--arrow">
 									<use xlink:href="#arrow-menu" x="0" y="0"></use>
 							</svg>
 						</li>
@@ -160,14 +165,14 @@
 			</div>
 
 
-			<div class="block__content">
-				<div class="block__conten--with-caption">
-							<div class="block__conten--caption">
-								<h2 class="block__conten--caption-h">Ongoing events
+			<div class="main__blocks">
+				<div class="main__conteiner">
+							<div class="main__caption">
+								<h2 class="main__caption_line">Ongoing events
 								</h2>
 							</div>
 
-					<div class="block__content__subcobntent">
+					<div class="block__gallery">
 						<div class="gallery__block">	
 		  						<div class="gallery__block-img">
 									<a class="gallery__block-img-link" href="#">
@@ -249,9 +254,9 @@
 	     
 
 
-				<div class="block__conten--with-caption">
-					<div class="block__conten--caption">
-						<h2 class="block__conten--caption-h">Tidligere events
+				<div class="main__conteiner">
+					<div class="main__caption">
+						<h2 class="main__caption_line">Tidligere events
 						</h2>
 							<div class="block__conteiner--ellipse">
 								<button class="ellipse-arrow--white">
@@ -271,7 +276,7 @@
 					</div>
 
 
-				<div class="block__content__subcobntent">
+				<div class="block__gallery">
 					<div class="gallery__block">
 						<div class="gallery__block-img">
 							<a class="gallery__block-img-link" href="#">

@@ -1,4 +1,4 @@
-.rectangle {
+.head {
 	display: flex;
 	align-items: center;
 	justify-content:space-between;
@@ -6,7 +6,7 @@
 	position: relative;
 }
 
-.rectangle__logo--img {
+.head__img {
 	display:block;
 	height: 34px;
 	width: 190px;
@@ -17,17 +17,12 @@
 	border-right: 1px solid rgba(255, 193, 128, 0.76);
 }
 
-.rectangle__logo__container {
+.head__logotype {
 	display: flex;
 	align-items: center;
 }
 
-.rectangle__logo--link {
-	display: flex;
-	align-content: center;
-}
-
-.rectangle__form {
+.head__form {
 	width: 432px;
 	display: flex;
 	align-items: center; 
@@ -36,47 +31,47 @@
 	margin:10px;
 
 }
-.rectangle__button--menu{
+.head__button_three-line{
 	display: none;
 }
 
-.rectangle__logo--Partner {
+.head__logotype_partner {
 	height: 20px;
 	width: 150px;
 
 }
 
-.rectangle__field {
+.head__input {
 	width: 100%;
 	height: 44px;
 	border-radius: 5px;
 	outline: none;
 	border: 1px solid #FF8300;
-	padding-left: 20px;
+	padding-left: 0px;
 }
 
-.rectangle__field::-webkit-input-placeholder {
+.head__input::-webkit-input-placeholder {
 	color: rgba(0, 0, 0, 0.3);
 	font-family: Nunito;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
-	padding-left: 20px;
+	padding-left: 0px;
 }
 
-.rectangle__field[type="text"] {
+.head__input[type="search"] {
 	padding:0 30px;
 }
 
-.rectangle__field:-moz-placeholder {
+.head__input:-moz-placeholder {
 	color: rgba(0, 0, 0, 0.3);
 	font-family: Nunito;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
-	padding-left: 20px;
+	padding-left: 0px;
 }
-.rectangle__field:-ms-input-placeholder {
+.head__input:-ms-input-placeholder {
 	color: rgba(0, 0, 0, 0.3);
 	font-family: Nunito;
 	font-style: normal;
@@ -84,17 +79,14 @@
 	font-size: 14px;
 }
 
-.rectangle__form__button--loup {
-	display: none;
-}
 
-.rectangle__form__loupe {
+.head__img_form-loup {
 	position: absolute;
 	left:2%;
 	top:25%;
 }
 
-.rectangle__form__button {
+.head__button-Go {
 	position: absolute;
 	top:0;
 	right: 0;
@@ -108,17 +100,17 @@
 	color: #FFFFFF;
 	}
 
-.rectangle__contact {
+.head__contact {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.rectangle__contact__people {
+.head__contact__img {
 	margin-right: 17px;
 }
 
-.rectangle__contact__people__name {
+.head__contact__name {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 16px;
@@ -128,13 +120,13 @@
 	position: relative;
 }
 
-.rectangle__contact__arrow {
+.head__contact__arrow {
 	margin-right: 17px;
 	width: 15px;
 	height: 10px;
 }
 
-.rectangle__contact__people__button {
+.head__contact__button {
 	border:none;
 	background: #fff;
 	display: flex;
@@ -144,15 +136,15 @@
 	width: 100%;
 }
 
-.rectangle__contact__people__button:hover {
+.head__contact__button:hover {
 	background: #f7f7f7;
 }
 
-.rectangle__form__button--loup {
+.head_button_loup {
 	display: none;
 }
 
-.rectangle__contact__dropdown-content {
+.head__contact__dropdown-content {
     display: none;
     position: absolute;
     top:107px;
@@ -161,17 +153,17 @@
     z-index: 8;
 }
 
-.rectangle__contact__dropdown-conten--link {
+.head__contact__dropdown-conten_link {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
 }
 
-.rectangle__contact__dropdown-conten--link:hover {
+.head__contact__dropdown-conten_link:hover {
 	background-color: #ddd
 }
 
-.rectangle__contact:hover .rectangle__contact__dropdown-content {
+.head__contact:hover .head__contact__dropdown-content{
     display: block;
 }
 
@@ -190,7 +182,7 @@
 }
 
 
-.subheader__conteiner__menu {
+.subheader__menu {
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -306,7 +298,7 @@
 	position: static;
 }
 
-.subheader__conteiner__menu--items {
+.subheader__menu--items {
 	display: flex;
 	height: 100%;
 	width: 70%;
@@ -322,7 +314,7 @@
 }
 /*---------------------------------------*/
 
-.mainBlock {
+.main {
 	margin:0;
 	padding:60px 0 0 0;
 	background: #fafafc;
@@ -330,11 +322,11 @@
 }
 
 
-.mainBlock__block {
+.main__block {
 	margin: 38px 115px;
 }
 
-.mainBlock__block__three-button {
+.main__three-buttons {
 	display: flex;
 	justify-content: center;
 	margin: 0 0 41px 0 ;
@@ -342,7 +334,7 @@
 
 }
 
-.mainBlock__block__button {
+.main__button {
 	margin: 0 ;
 	padding: 16px 62px 12px 62px;
 	border: 1px solid #D5D5D5;
@@ -355,12 +347,12 @@
 	color: black;
 }
 
-.first {
+.main__button-first {
 	border-radius: 5px 0 0 5px;
 
 }
 
-.third {
+.main__button-third {
 	border-radius:0 5px 5px 0;
 }
 

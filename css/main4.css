@@ -1,24 +1,21 @@
 
-.block {
-	background: #f5f5f5;
-}
 
-.rectangle {
+.head {
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.08);	
 }
 
-.block {
+.main {
 	display: flex;
 	align-items: center;
 }
-.block__conteiner {
+.main__block_padding{
 	display: flex;
 	width: 100%;
 	padding: 5% 65px 0 65px;
 	height: 100%;
 }
 
-.block__content {
+.main__blocks {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
@@ -26,26 +23,25 @@
 }
 
 
-.block__content__subcobntent {
+.block__gallery {
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
 	position: relative;
 }
 
-.block__menu {
+.main__menu {
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-end;
-	width: 20%;
 	z-index: 6;
 }
 
-.block__menu--link:focus {
+.main__menu--link:focus {
 	color: #FF8300;
 }
 
-.block__menu--information {
+.main__menu--navigation {
 	background: #fff;
 	padding: 0 0 0 15px;
 	position: sticky;
@@ -53,22 +49,22 @@
 	flex:0 0 214px;
 }
 
-.block__menu--items:hover .block__menu--link {
+.main__menu--items:hover .block__menu--link {
 	color: #ff6130; color: #ff6130; }
 
-.block__menu--items {
+.main__menu--items {
 	padding: 10px 40px 10px 10px;
 	border-bottom: 1px solid rgba(183, 193, 203, 0.2);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.block__menu--sign {
+.main__menu--sign {
 	width: 25px;
 	height: 25px;
 }
 
-.block__menu--link {
+.main__menu--link {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -79,7 +75,7 @@
 	color: #3E3934;
 }
 
-.block__menu--arrow {
+.main__menu--arrow {
 	width: 10px;
 	height: 10px;
 }
@@ -97,8 +93,7 @@
 	position: absolute;
 	top:50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
-	
+	transform: translate(-50%,-50%);	
 }
 
 .gallery__block--button-plus {
@@ -108,11 +103,9 @@
 	transform: translate(-50%,-50%);
 }
 
-
 .botton {
 	position: relative;
 }
-
 
 .gallery__button {
 	display: flex;
@@ -145,7 +138,7 @@
 
 
 
-.block__conten--with-caption {
+.main__conteiner {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 30px;
@@ -153,20 +146,18 @@
 }
 
 
-.block__conten--caption-h {
+.main__caption_line{
 	font-weight: bold;
 	font-size: 28px;
 	line-height: 34px;	
 	padding-left: 20px;
-	background: #f5f5f5;
+	background: #fafafc;
 	position: relative;
+	overflow: hidden;
 }
 
-.block__conten--caption-h {
-    overflow: hidden;
-}
 
-.block__conten--caption-h:after {
+.main__caption_line:after {
     content:"";
     display: inline-block;
     height: 1px;
@@ -183,8 +174,8 @@
 	right: 0%;
 	z-index: 7;
 	display: flex;
-	background: #f5f5f5;
-	width: 20%;
+	background: #fafafc;
+	width: 100px;
 	justify-content: flex-end;
 	
 }

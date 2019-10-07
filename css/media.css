@@ -1,54 +1,53 @@
 @media only screen and (max-width: 900px)
 {
-	.rectangle {
+	.head {
 		padding: 12px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 
-	.rectangle__logo {
+	.head__logotype_disable {
 		width: 100%;
     	display: flex;
     	justify-content: space-between;
 	}
 
-	.rectangle__logo--caption {
+	.head__img_caption {
 		display: none;
 	}
-	.rectangle__logo__container {
+	.head__logotype {
 		display: flex;
 	}
 
-	.rectangle__logo--img {
+	.head__img {
 		width: 60px;
 		height: 34px;
 	}
 
-	.rectangle__contact__people__button {
-		display: none;
-	}
-	.rectangle__form {
+
+	.head__contact__button {
 		display: none;
 	}
 
-	.rectangle__form__button--loup {
+	.head__form {
+		display: none;
+	}
+
+	.head_button_loup {
 		display: flex;
 		align-items: center;
-	}
-
-	.rectangle__form__button--loup--img {
-		width: 23px;
-		height: 23px;
-	}
-
-	.rectangle__form__button--loup {
 		background: #fff;
 		border: none;
 	}
 
+	.head__img_loup {
+		width: 23px;
+		height: 23px;
+	}
 
-	.rectangle__button--menu {
+
+	.head__button_three-line {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -59,7 +58,11 @@
 
 	}
 
-	.rectangle__button__conteiner--menu {
+	.head_buttons {
+		display: flex;
+	}
+
+	.head__menu {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -67,13 +70,13 @@
 		height: 20px;
 	}
 
-	.rectangle__button__lines--menu {
+	.head__menu_itim {
 		height: 2px;
 		width: 22px;
 		background: #3E3934;
 	}
 
-	.rectangle__field1 {
+	.head__input_phine-version {
 		width: 80%;
 		height: 22px;
 		border-radius: 5px;
@@ -90,7 +93,7 @@
 		transition: 0.3s;
 	}
 
-	.rectangle__form__button--loup:hover .rectangle__field1 {
+	.head_button_loup:focus .head__input_phine-version {
 		display: block;
 	}
 
@@ -113,7 +116,7 @@
 		display: flex;
 
 	}
-	.subheader__conteiner__menu--items {
+	.subheader__menu--items {
 		display: flex;
 		justify-content: space-around;
 		height: 100%;
@@ -154,32 +157,32 @@
 		height: 100%;
 	}
 
-	.mainBlock__block__three-button {
+	.main__three-buttons {
 		width:100%;
 		margin: 0 0 10% 0;
 	}
-	.mainBlock__block__button {
+	.main__button {
 		height: 60px;
 		width: 80%;
 	}
 	
-	.mainBlock{
+	.main{
 		padding: 15% 0 0 0;
 
 	}
 
-	.mainBlock__block {
+	.main__block {
 		margin: 0;
 		padding: 0;
 	}
 
-	.first {
+	.main__button-first {
 		padding: 0;
 	}
-	.second {
+	.main__button-second {
 		padding: 0;
 	} 
-	.third {
+	.main__button-third {
 		padding: 0;
 	}
 	
