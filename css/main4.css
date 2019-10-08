@@ -54,6 +54,8 @@
 	position: sticky;
 	top:5%;
 	flex:0 0 214px;
+		border-radius: 5px;
+	border: thin solid #E2E2E5;
 }
 .main__menu_hover {
 	padding-left: 20px;
