@@ -19,10 +19,10 @@ var paths = {
     },
     images: ['./images/**'],
     scss: {
-        build: ['./src/scss/style.scss', './src/scss/style-*.scss','./src/scss/main-*.scss'],
+        build: ['./src/scss/style.scss', './src/scss/style-*.scss','./src/scss/main3*.scss'],
         watch: ['./src/scss/**/*.scss']
     },
-    css: ['./css/style.css', './css/style-*.css','./css/main-*.css']
+    css: ['./css/style.css', './css/style-*.css','./css/main3*.css']
 };
 
 gulp.task('clean', function () {
