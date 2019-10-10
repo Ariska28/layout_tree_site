@@ -14,7 +14,21 @@ $color-white:#fff;
 	align-items: $center;
 	justify-content: $space-between;
 } 
-/*-----------------------------------------------------------*/
+
+@mixin click($hover,$active) {
+	&:hover {
+		background:$hover;
+		transition: 0.2s ease-in;
+	}
+
+	&:active {
+		background:$active;
+		transition: 0.2s ease-in;
+	}
+}
+
+
+/**------------------------------------------*/
 
 .block-picture {
 	position: relative;
@@ -49,6 +63,9 @@ $color-white:#fff;
 .block-picture__container {
 	display: flex;
 	justify-content: space-between;
+	@media only screen and (max-width: 1060px){
+		flex-direction:column;
+	}
 }
 
 .block-picture__subcontainer1 {
@@ -56,17 +73,26 @@ $color-white:#fff;
 	margin-top: 7%;
 	margin-right: 3%;
 	margin-bottom: 7%;
+	@media only screen and  (max-width: 1060px){
+		margin: 7%
+	}
+
 }
 
-.hight_conteiner__content__cubcontainer2 {
+.block-picture__subcontainer2 {
     margin-right: 9%;
 	margin-top: 10%;
 	margin-left: 3%;
 	margin-bottom: 7%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	justify-content: space-between;
+	@include flexes(flex,column,flex-end,space-between);
+	@media only screen and  (max-width: 1060px){
+		width: 100%;
+		@include flexes(flex,row,center,center);
+		margin-right: 0%;
+		margin-top: 4%;
+		margin-left: 0%;
+		margin-bottom: 4%;
+	}
 }
 
 .block-picture__headline {
@@ -77,12 +103,18 @@ $color-white:#fff;
 }
 
 .block-picture__list {
+	margin-top: 10%;
 	list-style-type: none;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 17px;
 	color: $color-white;
 	padding: 0;
+
+}
+
+.block-picture__sign-music {
+	@include svg(40px,40px);
 }
 
 .list__items {
@@ -94,147 +126,173 @@ $color-white:#fff;
 	@include svg(20px,27px);
 	margin-right: 5px;
 }
-
-.hight_conteiner__video {
+//fill="white" fill-opacity="0.7"
+.block-picture__video {
 	margin-top: 10%;
 	width: 360px;
 	height: 200px;
 	border-radius: 8px;
 	border: solid 2px rgba(255,255,255,0.2);
-
+	@media only screen and (max-width: 1060px){
+		display: none;
+	}
 }
 
-.hight_conteiner__content__cubcontainer__button {
+.block-picture__buttons {
 	margin-top: 20%;
-	display: flex;
-	align-items: center;
+	@include flexes(flex,row,center,flex-start);
+	@media only screen and (max-width: 1060px){
+		width: 100%;
+		@include flexes(flex,row,center,space-between);
+	}
+
 }
 
-.hight_conteiner__content__cubcontainer__button__link {
+.block-picture__button_orange {
 	padding: 12px 30px;
-	color: #FFFFFF;
+	color: $color-white;
 	background: #FF8300;
 	border-radius: 5px;
+	@include flexes(flex,row,center,center);
+	@include click(#4169E1,#00008B);
+	@media only screen and (max-width: 1060px){
+		padding: 0;
+		background: none;
+	}
+	
 }
 
-.hight_conteiner__content__cubcontainer__button__link__img {
-	position: relative;
-	right: 9px;
-	top: 3px;
+.block-picture__button {
+	color: $color-white;
+	@include flexes(flex,row,center,center);
+	margin-right: 10%;
+	@media only screen and (max-width: 1060px){
+	margin-right: 0;
+	}
 }
 
-.hight_conteiner__content__cubcontainer__button__link2 {
-	padding-left: 45px;
-	color: #FFFFFF;
+.block-picture__img-button {
+	@include svg();
 }
 
-.hight_conteiner__content__cubcontainer__button__link2__img {
-	position: relative;
-	top: 3px;
-	right: 4px;
+.block-picture__img-button_orange {
+	@include svg(30px,30px);
+	fill:$color-white;
+	opacity: 0.7;	
+	@media only screen and (max-width: 1060px){
+	fill:$color-orange;
+	opacity: 0.5;
+	}
 }
 
 
-/*---------------------------main_conteiner-----------------------------------------*/
-
-
-
-.main_conteiner {
-	display:flex;
-	flex-direction: column;
-	background: #fff;
-	padding: 5% 5%
-
-}
-
-.main_conteiner__high_conteiner {
-	display: flex;
-	justify-content: space-around;
-}
-
-.main_conteiner__high_cinteiner__details {
-	width: 40%;
-}
-.main_conteiner__high_cinteiner__location {
-	width: 50%;
-}
-
-.hight_conteiner__content__cubcontainer2__button__link {
+.block-picture__button_invisinle {
 	padding: 12px 30px;
-	color: #FFFFFF;
+	color:$color-white;
 	border-radius: 5px;	
 	border: solid 2px rgba(255,255,255,0.2);
+	@include click(rgba(65, 105, 225,0.5),rgba(0, 0, 139,0.5));
+}
+/*---------------------------main_conteiner-----------------------------------------*/
+
+.main_3 {
+	display:flex;
+	flex-direction: column;
+	background: $color-white;
+	padding: 7%;
 
 }
 
-.hight_conteiner__content__cubcontainer__button__link:hover {
-	background: #4169E1;
-	transition: 0.2s ease-in;
+.main__conteiner {
+	@include flexes(flex,row,flex-start,space-around);
+	@media only screen and (max-width: 1060px){
+		@include flexes(flex,column,center,center);
+	}
+
 }
 
-.hight_conteiner__content__cubcontainer__button__link:active {
-	background: #00008B;	
+.main__subcomteiner {
+	width: 40%;
+	@media only screen and (max-width: 1060px){
+		width: 100%;
+	}
 }
 
-.hight_conteiner__content__cubcontainer2__button__link:hover {
-	background: rgba(65, 105, 225,0.5);
-	transition: 0.2s ease-in;
+.main__headline_3 {
+	font: {
+	weight: bold;
+	size: 28px;
+	}
+	line-height: 34px;
+	color: #101010;
+	padding: 5% 0 3% 0 ;
 }
 
-.hight_conteiner__content__cubcontainer2__button__link:active {
-	background: rgba(0, 0, 139,0.5);
-}
-
-.main_conteiner__subcontainer {
+.main__table {
 	display: flex;
 	flex-direction: column;
 }
 
-.main_conteiner__sub--subcontainer {
+
+.main__subcomteiner2 {
+	width: 50%;
+	@media only screen and (max-width: 1060px){
+		width: 100%;
+	}
+}
+
+
+.main__row {
 	display: flex;
 	justify-content: flex-start;
 	padding: 1.5%;
 
 }
-.yellow {
+.main__row_yellow {
 	background: #FFE6CC;
 }
-.main_conteiner__sales {
+.main__colimn1 {
 	font-size: 16px;
 	line-height: 26px;
 	color: #5D5D5D;
+	width: 30%;
 }
 
-.main_conteiner__sales--main{
+.main__colimn2{
 	font-size: 16px;
 	line-height: 24px;
 	color: #222222;	
-
+	width: 70%;
 }
 
-.first {
-	margin-left: 45px;	
-}
-.second {
-	margin-left: 30px;	
-}
-.third {
-	margin-left: 97px;	
-}
-
-.main_conteiner__map {
+.main__map {
 	border-radius: 8px;
 	box-shadow: 5px 5px 20px 7px rgba(0,0,0,0.1);
 	width: 100%;
 
 }
 
-/*----------------gallery----------------------*/
-.main_conteiner__high_cinteiner__details__caption {
-	margin:0;
+.gallery {
+	padding:0 5% 5% 5%;
 }
 
-.main_conteiner__down_conteiner {
-	margin-left: 7%;
+.main__headline {
+	padding: 6% 6% 0 6%;
 }
+
+
+.gallery__headline {
+padding: 0 0 0 7%;
+}
+
+
+
+
+/*-----------------------------------------------------------*/
+
+
+
+	
+
+
 

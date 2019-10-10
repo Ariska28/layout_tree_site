@@ -431,3 +431,14 @@
 	    flex: 0 0 calc(100% - 40px);
 	}
 }
+
+@media screen  and (min-width: 900px ) and (max-width: 1200px )
+{ 
+	.subheader--reload {
+		width: 10%;
+	}
+	.subheader__menu--items {
+		width: 90%;
+		justify-content: center;
+	}
+}

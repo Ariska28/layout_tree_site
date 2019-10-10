@@ -195,9 +195,6 @@
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 700px) {
-
-
-
 	.main__block_padding{
 		display: flex;
 		width: 100%;
@@ -276,9 +273,7 @@
 	.main__menu_invisible {
 		display: none;
 	}
-
-
-}
+}	
 
 @media only screen and (max-width: 700px) {
 
