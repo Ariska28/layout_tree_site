@@ -30,6 +30,14 @@ $color-white:#fff;
 
 /**------------------------------------------*/
 
+
+.head__img_audio {
+	@include svg();
+	position: absolute;
+	right: 13%;
+	top:22%;
+}
+
 .block-picture {
 	position: relative;
 }
@@ -148,6 +156,19 @@ $color-white:#fff;
 
 }
 
+
+
+.block-picture__button {
+	color: $color-white;
+	@include flexes(flex,row,center,center);
+	margin-right: 10%;
+	background: none;
+	border: none;
+	@media only screen and (max-width: 1060px){
+	margin-right: 0;
+	}
+}
+
 .block-picture__button_orange {
 	padding: 12px 30px;
 	color: $color-white;
@@ -158,17 +179,9 @@ $color-white:#fff;
 	@media only screen and (max-width: 1060px){
 		padding: 0;
 		background: none;
+		@include click(none,none);
 	}
 	
-}
-
-.block-picture__button {
-	color: $color-white;
-	@include flexes(flex,row,center,center);
-	margin-right: 10%;
-	@media only screen and (max-width: 1060px){
-	margin-right: 0;
-	}
 }
 
 .block-picture__img-button {
@@ -178,7 +191,7 @@ $color-white:#fff;
 .block-picture__img-button_orange {
 	@include svg(30px,30px);
 	fill:$color-white;
-	opacity: 0.7;	
+	opacity: 0.7;
 	@media only screen and (max-width: 1060px){
 	fill:$color-orange;
 	opacity: 0.5;
@@ -198,23 +211,24 @@ $color-white:#fff;
 .main_3 {
 	display:flex;
 	flex-direction: column;
-	background: $color-white;
-	padding: 7%;
 
 }
 
 .main__conteiner {
-	@include flexes(flex,row,flex-start,space-around);
+	@include flexes(flex,row,flex-start,space-between);
 	@media only screen and (max-width: 1060px){
 		@include flexes(flex,column,center,center);
+		padding-bottom: 7%;
 	}
 
 }
 
-.main__subcomteiner {
+.main__subconteiner {
+	margin-left:20px;
 	width: 40%;
 	@media only screen and (max-width: 1060px){
-		width: 100%;
+		width: 90%;
+		margin-left:0px;
 	}
 }
 
@@ -234,10 +248,12 @@ $color-white:#fff;
 }
 
 
-.main__subcomteiner2 {
+.main__subconteiner2 {
 	width: 50%;
+	margin-right:20px;
 	@media only screen and (max-width: 1060px){
-		width: 100%;
+		width: 90%;
+		margin-right:0px;
 	}
 }
 
@@ -272,21 +288,24 @@ $color-white:#fff;
 
 }
 
-.gallery {
-	padding:0 5% 5% 5%;
+
+.gallery__main__headline_3 {
+	font: {
+	weight: bold;
+	size: 28px;
+	}
+	line-height: 34px;
+	color: #101010;
+	margin-left: 20px;
 }
 
-.main__headline {
-	padding: 6% 6% 0 6%;
+.block-padding {
+	padding: 7%;
 }
 
-
-.gallery__headline {
-padding: 0 0 0 7%;
+.head__input {
+	border: 1px solid #DCDCDC;
 }
-
-
-
 
 /*-----------------------------------------------------------*/
 
